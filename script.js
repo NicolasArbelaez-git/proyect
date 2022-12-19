@@ -35,8 +35,8 @@ function procesar(e){
     
     alerta.style.display = "block";
     informe.style.display = "block";
-    informe__valor.textContent = conFiet
-    informe__neto.textContent = neto
+    informe__valor.textContent = "$" + conFiet
+    informe__neto.textContent = "$" + neto
 
     if (document.getElementById('efectivo').checked) {
         alert("El pago será en efectivo. ¡Operación exitosa! (COP $" + conFiet + ")")
