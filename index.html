@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container__process">
+        <h2 id="hola">Simulación</h2>
+        <form action="" id="conversion">
+            <div class="container__form">
+                <ul>
+                    <li id="titulos">
+                        <p>Cantidad monedas</p>
+                        <p>Comisión</p>
+                    </li>
+                    <li>
+                        <label for="moneda-50">
+                            <img src="img/moneda_50_235.png" alt="Moneda de $50">
+                        </label>
+                        <input type="number" class="input-cantidad" id="moneda-50" placeholder="Cantidad">
+                        <input type="number" class="input-feit" id="feit__moneda-50" placeholder="50%">
+                        <label for="feit__moneda-50" class="pocentaje">%</label>
+                    </li>
+                    <li>
+                        <label for="moneda-100">
+                            <img src="img/moneda_100_235.png" alt="Moneda de $100">
+                        </label>
+                        <input type="number" class="input-cantidad" id="moneda-100" placeholder="Cantidad">
+                        <input type="number" class="input-feit" id="feit__moneda-100" placeholder="50%">
+                        <label for="feit__moneda-100" class="pocentaje">%</label>
+                    </li>
+                    <li>
+                        <label for="moneda-200">
+                            <img src="img/moneda_200_235.png" alt="Moneda de $200">
+                        </label>
+                        <input type="number" class="input-cantidad" id="moneda-200" placeholder="Cantidad">
+                        <input type="number" class="input-feit" id="feit__moneda-200" placeholder="50%">
+                        <label for="feit__moneda-200" class="pocentaje">%</label>
+                    </li>
+                    <li>
+                        <label for="moneda-500">
+                            <img src="img/moneda_500_235.png" alt="Moneda de $500">
+                        </label>
+                        <input type="number" class="input-cantidad" id="moneda-500" placeholder="Cantidad">
+                        <input type="number" class="input-feit" id="feit__moneda-500" placeholder="50%">
+                        <label for="feit__moneda-500" class="pocentaje">%</label>
+                    </li>
+                    <li>
+                        <label for="moneda-1000">
+                            <img src="img/moneda_1000_235.png" alt="Moneda de $1000">
+                        </label>
+                        <input type="number" class="input-cantidad" id="moneda-1000" placeholder="Cantidad">
+                        <input type="number" class="input-feit" id="feit__moneda-1000" placeholder="50%">
+                        <label for="feit__moneda-1000" class="pocentaje">%</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="container__metodoPago">
+                <div>
+                    <input type="radio" id="efectivo" name="metodoPago">
+                    <label for="efectivo">Efectivo</label>
+                </div>
+                <div>
+                    <input type="radio" id="transferencia" name="metodoPago">
+                    <label for="transferencia">Transferencia</label>
+                </div>
+            </div>
+            <div class="container__pago">
+                <button type="submit">Aceptar</button>
+            </div>
+        </form>
+        <p id="alerta">¡Operación exitosa!</p>
+
+        <div id="informe">
+            <p>Informe de transación</p><br>
+            <span>Metodo: </span><span id="metodo"></span>
+            <br>
+            <span>Valor de la operacion: </span><span id="valor"></span>
+            <br>
+            <span>Tota neto: </span><span id="neto"></span>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
