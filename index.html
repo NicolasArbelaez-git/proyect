@@ -23,51 +23,51 @@
                         <label for="moneda-50">
                             <img src="img/moneda_50_235.png" alt="Moneda de $50">
                         </label>
-                        <input type="number" class="input-cantidad" id="moneda-50" placeholder="Cantidad" required>
-                        <input type="number" class="input-feit" id="feit__moneda-50" placeholder="50%" required>
+                        <input type="number" min="0" class="input-cantidad" id="moneda-50" placeholder="Cantidad" required>
+                        <input type="number" min="0" step="0.01" class="input-feit" id="feit__moneda-50" placeholder="0.5%" required>
                         <label for="feit__moneda-50" class="pocentaje">%</label>
                     </li>
                     <li>
                         <label for="moneda-100">
                             <img src="img/moneda_100_235.png" alt="Moneda de $100">
                         </label>
-                        <input type="number" class="input-cantidad" id="moneda-100" placeholder="Cantidad" required>
-                        <input type="number" class="input-feit" id="feit__moneda-100" placeholder="50%" required>
+                        <input type="number" min="0" class="input-cantidad" id="moneda-100" placeholder="Cantidad" required>
+                        <input type="number" min="0" step="0.01" class="input-feit" id="feit__moneda-100" placeholder="0.5%" required>
                         <label for="feit__moneda-100" class="pocentaje">%</label>
                     </li>
                     <li>
                         <label for="moneda-200">
                             <img src="img/moneda_200_235.png" alt="Moneda de $200">
                         </label>
-                        <input type="number" class="input-cantidad" id="moneda-200" placeholder="Cantidad" required>
-                        <input type="number" class="input-feit" id="feit__moneda-200" placeholder="50%" required>
+                        <input type="number" min="0" class="input-cantidad" id="moneda-200" placeholder="Cantidad" required>
+                        <input type="number" min="0" step="0.01" class="input-feit" id="feit__moneda-200" placeholder="0.5%" required>
                         <label for="feit__moneda-200" class="pocentaje">%</label>
                     </li>
                     <li>
                         <label for="moneda-500">
                             <img src="img/moneda_500_235.png" alt="Moneda de $500">
                         </label>
-                        <input type="number" class="input-cantidad" id="moneda-500" placeholder="Cantidad" required>
-                        <input type="number" class="input-feit" id="feit__moneda-500" placeholder="50%" required>
+                        <input type="number" min="0" class="input-cantidad" id="moneda-500" placeholder="Cantidad" required>
+                        <input type="number" min="0" step="0.01" class="input-feit" id="feit__moneda-500" placeholder="0.5%" required>
                         <label for="feit__moneda-500" class="pocentaje">%</label>
                     </li>
                     <li>
                         <label for="moneda-1000">
                             <img src="img/moneda_1000_235.png" alt="Moneda de $1000">
                         </label>
-                        <input type="number" class="input-cantidad" id="moneda-1000" placeholder="Cantidad" required>
-                        <input type="number" step="0.01" class="input-feit" id="feit__moneda-1000" placeholder="50%" required>
+                        <input type="number" min="0" class="input-cantidad" id="moneda-1000" placeholder="Cantidad" required>
+                        <input type="number" min="0" step="0.01" class="input-feit" id="feit__moneda-1000" placeholder="0.5%" required>
                         <label for="feit__moneda-1000" class="pocentaje">%</label>
                     </li>
                 </ul>
             </div>
             <div class="container__metodoPago">
                 <div>
-                    <input type="radio" id="efectivo" name="metodoPago">
+                    <input type="radio" id="efectivo" name="metodoPago" required>
                     <label for="efectivo">Efectivo</label>
                 </div>
                 <div>
-                    <input type="radio" id="transferencia" name="metodoPago">
+                    <input type="radio" id="transferencia" name="metodoPago" required>
                     <label for="transferencia">Transferencia</label>
                 </div>
             </div>
